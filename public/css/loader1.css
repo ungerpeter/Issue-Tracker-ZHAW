@@ -1,0 +1,56 @@
+#loader1,
+#loader1::before,
+#loader1::after {
+    border: solid 6px transparent;
+    border-radius: 100%;
+    animation-name: fullRotate;
+    animation-timing-function: ease;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+
+}
+#loader1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-top-color: #002a80;
+}
+#loader1::before,
+#loader1::after {
+    position: absolute;
+    content: "";
+}
+#loader1::before {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-top-color: #2b669a;
+    animation-delay: 1.2s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+#loader1::after {
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    left: 6px;
+    border-top-color: #8c8c8c;
+    animation-delay: 1.7s;
+    animation-duration: 0.5s;
+    animation-name: fullRotateB;
+    animation-iteration-count: 1;
+}
+
+
+
+
+@keyframes fullRotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+@keyframes fullRotateB {
+    from { transform: rotate(360deg); }
+    to   { transform: rotate(0deg); }
+}

@@ -1,0 +1,76 @@
+.navigation {
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    background-color: #eeeeee;
+}
+.content {
+    background-color: #ffffff;
+    position: relative;
+    height: 100vh;
+    margin-left: 300px;
+    padding-left: 20px;
+}
+
+.addcontent{
+    height: 40px;
+    width: 280px;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    right:10px;
+
+}
+
+#addbutton{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    float: right;
+}
+#addprojecttext{
+    width: 240px;
+    float:left;
+}
+
+.projectcontainer{
+    padding: 10px;
+}
+.projectcontainer>ul>li>a{
+    margin-top: 10px;
+    background-color: #3c3c3c;
+    color: #ffffff;
+}
+.projectcontainer>ul>li>a:checked{
+    background-color: #6a4a4a;
+}
+
+
+.createissue{
+    height: 110px;
+}
+.createissue.row{
+    margin-top: 30px;
+}
+#issues{
+    height:100%;
+    margin-top: 50px;
+
+}
+
+.issueitem{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #7d7d7d;
+}
+
+
+
+
+
+

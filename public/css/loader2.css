@@ -1,0 +1,38 @@
+#loader2 {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 60px auto 20px;
+    animation: fullRotate2 3s ease 50ms infinite;
+}
+@keyframes fullRotate2 {
+    to { transform: rotate(720deg); }
+}
+#loader2::before,
+#loader2::after {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    content: "";
+    background-color: hsl(200, 20%, 50%);
+    border-radius: 50%;
+    transform: scale(0);
+    animation-name: pulseScale;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes pulseScale {
+    from, to { transform: scale(0.1); }
+    50%      { transform: scale(1); }
+}
+#loader2::before {
+    top: 0;
+    right: 0;
+    animation-delay: 1600ms;
+}
+#loader2::after {
+    bottom: 0;
+    left: 0;
+    animation-delay: 600ms;
+}

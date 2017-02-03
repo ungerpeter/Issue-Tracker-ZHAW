@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/loader1.css">
+    <link rel="stylesheet" href="css/loader2.css">
+    <!-- Latest compiled and minified JavaScript -->
+
+
+
+</head>
+<body>
+
+<div class="navigation">
+
+    <div class="projectcontainer">
+        <ul class="nav nav-pills nav-stacked" id="projectlist">
+            <!-- Pushed by JS -->
+            <div id="loader1"></div>
+        </ul>
+    </div>
+
+    <div class="addcontent">
+
+        <div class="input-group input-group-sm" id="addprojecttext">
+            <span class="input-group-addon" id="sizing-addon3">Name</span>
+            <input type="text" class="form-control" placeholder="Projectname" aria-describedby="sizing-addon3"
+                   id="inputname">
+        </div>
+
+        <button type="button" class="btn btn-default" aria-label="Add" id="addbutton" onclick="addProject()">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </button>
+    </div>
+
+</div>
+
+<div class="content">
+
+    <div class="row">
+        <div class="col-lg-6"><h3  id="projecttitle">Title</h3></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6"><h3>Create Issue</h3></div>
+    </div>
+
+
+
+    <div class="createissue">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="input-group input-group-sm" >
+                    <span class="input-group-addon" id="sizing-addon4">Issue</span>
+                    <input type="text" class="form-control" placeholder="What issue man?" aria-describedby="sizing-addon4"
+                    id="inputtitle">
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="input-group input-group-sm" >
+                    <span class="input-group-addon" id="sizing-addon5">Date</span>
+                    <input type="text" class="form-control" aria-describedby="sizing-addon5"
+                           id="createdate">
+                </div>
+
+            </div>
+            <!-- This box wont pop up, i dont know ehy, 1:1 copy from bootstrap-->
+            <div class="col-sm-2">
+                <div class="btn-group-sm">
+                    <button type="button" style="width: 80px" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    id="inputprio">HIGH<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="inputprio">
+                        <li><a href="#">HIGH</a></li>
+                        <li><a href="#">MIDDLE</a></li>
+                        <li><a href="#">LOW</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-1">
+                <div class="btn-group-sm">
+                    <button type="button" class="btn btn-default" aria-label="Add Issue" id="addissue" onclick="addIssue()">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8"><h3>Project Issues</h3></div>
+
+    </div>
+
+    <div id="issues">
+        <!-- Filled by JS : itemsjs: createIssueItem -->
+    </div><!-- /.issues -->
+
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+<script src="../components/ProjectList.js"></script>
+
+<script src="js/Issue.js"></script>
+<script src="js/Project.js"></script>
+<script src="js/ProjectList.js"></script>
+<script src="js/projectjs.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+{
+  "presets": ["react", "react-native", "stage-2", "es2015"],
+  "plugins": ["react-hot-loader/babel", "transform-decorators"]
+}
